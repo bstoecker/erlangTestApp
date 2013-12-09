@@ -1,4 +1,4 @@
--module(myfirstserver_custom_tags).
+-module(erlangServer_custom_tags).
 -compile(export_all).
 
 % put custom tags in here, e.g.

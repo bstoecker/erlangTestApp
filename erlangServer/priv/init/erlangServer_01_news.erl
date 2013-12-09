@@ -1,4 +1,4 @@
--module(myfirstserver_01_news).
+-module(erlangServer_01_news).
 
 -export([init/0, stop/1]).
 

@@ -1,4 +1,4 @@
--module(myfirstserver_incoming_mail_controller).
+-module(erlangServer_incoming_mail_controller).
 -compile(export_all).
 
 authorize_(User, DomainName, IPAddress) ->
