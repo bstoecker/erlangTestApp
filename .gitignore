@@ -9,3 +9,5 @@ erl_crash.dump
 #*#
 .*#
 *#
+**/*.log
+**/*.dump
