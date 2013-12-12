@@ -3,7 +3,7 @@
 -include("controller_helper.hrl").
 
 ga('POST', []) ->
-  {struct, Body} = mochijson2:decode(Req:request_body()),
-  Msg = proplists:get_value(<<"content">>,Body,""),
-  List = values_of(proplists:get_value(<<"my_list">>,Body,"")),
+  Body = get_body(Req:request_body()),
+  Msg = get_value(<<"message">>, Body, ""),
+  List = get_value(<<"my_list">>, Body, []),
   {json, [{got, Msg}, {list, List}]}.
