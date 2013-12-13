@@ -16,3 +16,16 @@ get_value(Key, DeserializedBody) -> get_value(Key, DeserializedBody, undefined).
 get_body(Body) ->
   {_, JsonBody} = mochijson2:decode(Body),
   JsonBody.
+
+json_attributes(Result, []) -> Result;
+json_attributes(Result, [{ Key, Value } | SubList]) ->
+  NewResult = [{ erlang:binary_to_atom(Key, utf8), Value } | Result],
+  json_attributes(NewResult, SubList).
+
+json_attributes(JsonList) ->
+  json_attributes([], JsonList).
+
+
+
+
+% binary_to_atom

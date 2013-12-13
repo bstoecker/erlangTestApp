@@ -1,0 +1,2 @@
+-module(activity, [Id, Cathegory, WorkloadId, From, To, EmployeeId]).
+-compile(export_all).
