@@ -35,7 +35,7 @@ POST ga:
       "id": 1,
       "employee_id": 2,
       "cathegory": "work",
-      "workoad_id": 1,
+      "workload_id": 1,
       "from": "2012-01-01T01:00:00.000+01:00",
       "to": "2012-01-02T00:00:00.000+01:00"
     }
